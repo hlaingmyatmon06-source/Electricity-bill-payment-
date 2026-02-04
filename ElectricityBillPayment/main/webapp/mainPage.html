@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body{
+            font-family: 'Open Sans',sans-serif;
+        }
+
+        .link{
+             line-height: 15px;
+            display: flex; 
+            /*justify-content: space-around;
+            align-items:center ; */
+            margin: 5px;
+            padding: 5px;
+            list-style-type: none;
+            float: inline-end;
+        } */
+
+        .logo{
+            margin: 15px;
+            margin-top: 5px;
+            padding: 5px;
+            height: 20px;
+        }
+
+
+        .link .nav-item a{
+            padding: 0 20px;
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+
+        .nav-item a::after{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 0;
+            background: #c4c4f7;
+            transition: .5s;
+        }
+
+        .nav-item a:hover::after{
+            width: 100%;
+        }
+
+        main{
+            display: flex;
+            /* border: 1px solid rgb(226, 215, 215); 
+            height: calc(100vh-100px);*/
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ele-img{
+            max-width: 500px;
+            height: auto;
+        }
+
+        .content-left{
+            width: 30%;
+        }
+
+        main h1{
+            font-size: 54px;
+            color: #133B4F;
+            text-transform: uppercase;
+        }
+
+        main p{
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            line-height: 31.5px;
+            margin: 30px 0;
+        }
+
+        .btn1{
+            padding: 15px 30px;
+            background: #c4c4f7;
+            color: #fff;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+        }
+
+        .rule{
+            margin-top: 10px;
+            width: 100%;
+        }
+        .rule .ru1{
+            display: inline-block;
+            margin-right: 6%;
+            margin-left: 7%;
+        }
+        .ru1 table tr td{
+            height: 80px;
+            border: 1px solid #c4c4f7;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+		.place{
+			border:1px solid transpant;
+			width:70%;
+			margin: auto;
+		}
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <div class="logo">
+                <img src="logo.jpg" alt="" width="50px">
+            </div>
+            <ul class="link">
+                <li class="nav-item"><a href="main.html">Home</a></li>
+                <li class="nav-item"><a href="#header1">About</a></li>
+                <li class="nav-item"><a href="#footer">Contact Us</a></li>
+                <li class="nav-item"><a href="selectLogin.html">Log In</a></li>
+                <li class="nav-item"><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-left" id="header1">
+            <h1>Our Goal</h1>
+            <p style="font-size:25px;">Our system save people time and effort and can be paid easily and quickly.</p>
+            <a href="#gg"><button class="btn1" >Explore</button></a>
+        </div>
+        <div class="content-right">
+            <img src="pic1.jpg" alt="" class="ele-img">
+        </div>
+    </main>
+
+    <div class="rule">
+        <div class="ru1">
+            <table border="1">
+                <tr>
+                    <td>စဉ်</td>
+                    <td>ဓာတ်အားသုံးစွဲသူအမျိုးအစား</td>
+                    <td>ယူနစ်</td>
+                    <td>ကျပ်</td>
+                </tr>
+                 <tr>
+                    <td rowspan="7">၁</td>
+                    <td rowspan="7">
+                        <h4>အိမ်သုံးအမျိုးအစား</h4>
+                        <ul>
+                            <li>နေအိမ်သုံး</li>
+                            <li>အိမ်သုံးပါဝါ</li>
+                            <li>တစ်လုံးတစ်ခဲတည်း(အိမ်သုံး)</li>
+                            <li>စီပွားရေးလုပ်ငန်းမပါသော<br>ဘာသာ/သာသနာအဆောက်အအုံ</li>
+                        </ul>
+                    </td>
+                    <td>၁-၃၀</td>
+                    <td>၃၅</td>
+                </tr>
+                 <tr>
+                    <td>၃၁-၅၀</td>
+                    <td>၅၀</td>
+                </tr>
+                 <tr>
+                    <td>၅၁-၇၅</td>
+                    <td>၇၀</td>
+                </tr>
+                 <tr>
+                    <td>၇၆-၁၀၀</td>
+                    <td>၉၀</td>
+                </tr>
+                 <tr>
+                    <td>၁၀၁-၁၅၀</td>
+                    <td>၁၁၀</td>
+                </tr>
+                 <tr>
+                    <td>၁၅၁-၂၀၀</td>
+                    <td>၁၂၀</td>
+                </tr>
+                 <tr>
+                    <td>၂၀၁ အထက်</td>
+                    <td>၁၂၅</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ru1">
+            <table border="1px">
+                <tr>
+                    <td>စဉ်</td>
+                    <td>ဓာတ်အားသုံးစွဲသူအမျိုးအစား</td>
+                    <td>ယူနစ်</td>
+                    <td>ကျပ်</td>
+                </tr>
+                 <tr>
+                    <td rowspan="7">၂</td>
+                    <td rowspan="10">
+                        <h4>အိမ်သုံးမဟုတ်သည့်အမျိုးအစား</h4>
+                        <ul>
+                            <li>စက်မှုလုပ်ငန်း</li>
+                            <li>စီပွားရလုပ်ငန်းများ</li>
+                            <li>တစ်လုံးတစ်ခဲတည်း</li>
+                            <li>ယာယီသုံး</li>
+                            <li>လမ်းမီး</li>
+                            <li>အစိုးရရုံးဌာန<br>အဖွဲအစည်းများ</li>
+                            <li>နိုင်ငံပိုင် စက်မှုလုပ်ငန်းများ</li>
+                            <li>နိုင်ငံပိုင်စီးပွားရေး လုပ်ငန်းများ</li>
+                            <li>မြစ်ရေတင်လုပ်ငန်း</li>
+                            <li>စည်ပင်သာယာရုံးဌာန/<br>လုပ်ငန်းများ</li>
+                            <li>နိုင်ငံခြားသံရုံးများ</li>
+                            <li>နိုင်ငံတကာအဖွဲအစည်းများ</li>
+                        </ul>
+                    </td>
+                    <td>၁ မှ ၅၀၀</td>
+                    <td>၁၂၅</td>
+                </tr>
+                 <tr>
+                    <td>၅၀၁ မှ ၅၀၀၀</td>
+                    <td>၁၃၅</td>
+                </tr>
+                 <tr>
+                    <td>၅၀၀၁ မှ ၁၀၀၀၀</td>
+                    <td>၁၄၅</td>
+                </tr>
+                 <tr>
+                    <td>၁၀၀၀၁ မှ ၂၀၀၀၀</td>
+                    <td>၁၅၅</td>
+                </tr>
+                 <tr>
+                    <td>၂၀၀၀၁ မှ ၅၀၀၀၀</td>
+                    <td>၁၆၅</td>
+                </tr>
+                 <tr>
+                    <td>၅၀၀၀၁ မှ ၁၀၀၀၀၀</td>
+                    <td>၁၇၅</td>
+                </tr>
+                 <tr >
+                    <td>၁၀၀၀၀၁ နှင့် အထက်</td>
+                    <td>၁၈၀</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+  	<div class="place">
+    <div class=" d-flex container mt-5" id="gg">
+        <div class="card shadow mx-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-calculator fs-3"></i></h5>
+   				<br>
+                <p class="card-text">Calculate bills periodically based on meter readings.</p>
+                <a href="Calculate.html" class="btn btn-primary">Calculate</a>
+            </div>
+        </div>
+
+        <div class="card shadow mx-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-coins fs-3"></i></h5>
+                <br>
+                <p class="card-text"> You can pay electricity bill from everywhere.</p>
+                <a href="login.html" class="btn btn-primary">Payment</a>
+            </div>
+        </div>
+        
+        <!--<div class="card shadow mx-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-user-secret fs-3"></i></h5>
+               	<br>
+                <p class="card-text">Login for admin</p>
+                <br>
+                <a href="adminLogin.html" class="btn btn-primary">Admin</a>
+            </div>
+        </div>-->
+
+    
+
+        <div class="card shadow mx-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-user fs-3"></i></h5>
+               	<br>
+                <p class="card-text">Details information of user</p>
+                <br>
+                <a href="Profile" class="btn btn-primary">Profile</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="bg-white" id="footer">
+        <div class="container-fluid bg-secondary footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h1 class="fw-bold text-primary m-0">E<span class="text-dark">Bill</span></h1>
+                        <p></p>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-white">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Pyay Aung Lan Main Road, Pyay Township,Bago Region, Myanmar</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>09958144749</p>
+                        <p><i class="fa fa-envelope me-3"></i>kozwehtet3@gmail.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-white">
+                        <h4 class="text-light mb-4">Developers</h4>
+                        <p>Ma Hlaing Myat Mon<br>Ma Mon Myat Thengi<br>Ma Khaing Zin Thant<br>Mg Arkar Kyaw Thu<br>Mg Zwe Htet Naing<br>Mg Ye Yint Aung<br>Mg Kyaw Linn Htet<br></p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+    </div>
+</body>
+
+</html>

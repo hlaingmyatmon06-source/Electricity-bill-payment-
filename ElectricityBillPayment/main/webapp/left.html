@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Frame</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+</style>
+<body>
+  <button onclick="addNewUser()" class="btn">Add New Meter</button><br>
+  <button onclick="showCalendar()" class="btn">Due Date</button><br>
+  <button onclick="showlogout()" class="btn"><a href="LogoutServlet">Logout</a></button><br>
+  
+
+  <script>
+    function addNewUser() {
+      parent.frames["rightFrame"].location.href = "adduser.html";
+    }
+
+    function showCalendar() {
+      parent.frames["rightFrame"].location.href = "calendar.html";
+    }
+    function showlogout() {
+        parent.frames["rightFrame"].location.href = "LogoutServlet";
+      }
+  </script>
+</body>
+</html>

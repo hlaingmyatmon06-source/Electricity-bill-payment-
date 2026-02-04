@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+.main {
+    margin-top: 100px;
+    display: flex;
+}
+
+
+/* card one section */
+
+.card1 {
+    padding: 10px;
+    margin-left: 100px;
+    width: 500px;
+    border: 2px solid;
+    box-shadow: 3px 5px 3px;
+    background-color: CED3DC;
+}
+
+img {
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 170px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.name {
+    margin-left: 170px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icon {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+
+/* card tow section */
+
+.card2 {
+    padding: 20px;
+    border: 2px solid;
+    margin-left: 10px;
+    width: 700px;
+}
+
+.detail {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.information {
+    columns: 2;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about {
+    padding-left: 100px;
+}
+
+.info {
+    padding-left: 100px;
+}
+
+.uptBtn {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}

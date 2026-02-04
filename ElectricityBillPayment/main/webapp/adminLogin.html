@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login Page</title>
+<style type="text/css">
+    body{
+        width: 100%;
+        height: 100vh;
+        color: lightsalmon;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .formPos{
+        width: 48%;
+        height: 100%;
+        float: right;
+        position: relative;
+
+    }
+    .formPos table{
+        margin-top: 100px;
+    }
+    .wp{
+        width: 48%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+</style>
+    <script type="text/javascript">
+    function Check_data(){
+        var name=document.getElementById("name").value;
+        var password=document.getElementById("password").value;
+        if(name=="" && password==""){
+            alert("Please enter name and password");
+         }
+        else if(name==""){
+            alert("Please enter your name");
+         }
+        else if(password==""){
+            alert("Please enter your password");
+        }
+</script>
+</head>
+<body>
+	<div class="formPos">
+    <form name="f1" action="adminLoginServlet" method="post">
+    <table cellspacing="20" align="center">
+        <tr>
+            <td colspan="2" align="center"><h1>Admin Login</h1></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="adminName" id="name" placeholder="Enter admin name" required></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="text" name="password" id="password" placeholder="Enter password" required></td>
+        </tr>
+        <tr> 
+            <td colspan="2" align="center">
+                <input type="submit" onclick="Check_data()" value="Login" style="width: 70px;height: 30px; background: lightsalmon;" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Clear" style="width: 70px;height: 30px; background: lightsalmon;">
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+ <div class="wp">
+    <img src="adminWp.png" width="100%" height="100%">
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightsalmon;
+            background-size: 100% 100%;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #calculator {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: auto;
+            margin-top:4%;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<a href="main.html" style="float:top;"><img src="1991752.png" width="30px" height="31px" style="margin-left:50px;margin-top:50px"></a>
+<div id="calculator">
+        <h1>Calculate Your Meter Bill</h1>
+        <form action="Caculate.jsp" method="post">
+            <table>
+    			<td><label for="meterType">Meter Type:</label></td>
+                  <tr>
+                    <td>
+                        <input type="radio" id="home" name="meterType" value="home" required>
+                        <label for="home">Home</label>
+                        <input type="radio" id="other" name="meterType" value="other" required>
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                  <tr>
+                    <td><label for="totalUnits">Total Units:</label></td>
+                    <td><input type="text" id="totalUnits" name="totalUnits"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="calculate">
+                    </td>
+                </tr>
+            </table>
+
+</form>
+</div>
+</body>
+</html>

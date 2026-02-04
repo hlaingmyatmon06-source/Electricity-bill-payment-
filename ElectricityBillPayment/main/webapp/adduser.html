@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New User</title>
+  <style>
+    .container {
+      	width: 25%;
+      	height: 60%;
+      	margin: 4% auto;
+      	font-family: Arial, sans-serif;
+      	background-color: white;
+      	padding: 20px;
+      	border-radius: 5px;
+      	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container table {
+      width: 100%;
+    }
+    .container td {
+      padding: 10px;
+    }
+    .container input,
+    .container textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover {
+      background-color: #45a049;;
+    }
+  </style>
+</head>
+<body  style="background-color:#cadddc;">
+<a href="admindishboard.jsp" style="float:top;"><img src="1991752.png" width="30px" height="31px" style="margin-left:50px;margin-top:50px"></a>
+  <div class="container">
+    <h1>Add New Meter</h1>
+    <form action="addNewUserServlet" method="post">
+      <table>
+        <tr>
+          <td><label for="meterno">MeterNo:</label></td>
+          <td><input type="text" id="meterno" name="meterno"></td>
+        </tr>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="metertype">meterType:</label></td>
+          <td><input type="text" id="metertype" name="metertype"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><input type="text" id="address" name="address"></td>
+        </tr>
+        <tr>
+          <td><label for="city">City:</label></td>
+          <td><input type="text" id="city" name="city"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
